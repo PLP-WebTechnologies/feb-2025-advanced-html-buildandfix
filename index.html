@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    <!-- Basic styling -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; max-width: 800px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { max-width: 400px; margin: 20px 0; }
+        label { display: block; margin: 10px 0 5px; }
+        input, select { width: 100%; padding: 8px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Roman Numeral Ordered List -->
+    <h2>List with Roman Numerals</h2>
+    <ol type="I">
+        <li>Ben Ten</li>
+        <li>Spider-Man</li>
+        <li>Pocahontas</li>
+        <li>Hellboy</li>
+        <li>Batman</li>
+    </ol>
+
+   
+    <h2>Sample Image</h2>
+    <img src= "https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg"
+         alt="landscape" 
+         width="500">
+
+    <!-- Contacts Table -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Akin Tomisin</td>
+            <td>14 Sanni Park, La, Nigeria</td>
+            <td>+2347042563789</td>
+            <td>akt@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Alice Chimaroke</td>
+            <td>Runway 24, Municipality, Cal, Nigeria</td>
+            <td>+2348125703796</td>
+            <td>alice.chiroke@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Morris Oche</td>
+            <td>111 Admiral Ejoor Way, Makurdi, Beu, Nigeria</td>
+            <td>+2348160056783</td>
+            <td>mooch@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sarah Williams</td>
+            <td>34 Kirby’s Villa, Diamond Estate, La, Nigeria </td>
+            <td>+2348147033110</td>
+            <td>sarah.w@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Eseoghene Barry</td>
+            <td>20 Mimshaq Avenue, Sapele, De, Nigeria</td>
+            <td>+2349130063440</td>
+            <td>esebarry007@gmail.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <!-- Name Field -->
+        <label for="name">Full Name *</label>
+        <input type="text" 
+               id="name" 
+               name="name" 
+               placeholder="Enter your full name" 
+               required>
+
+        <!-- Email Field -->
+        <label for="email">Email *</label>
+        <input type="email" 
+               id="email" 
+               name="email" 
+               placeholder="Enter your email" 
+               required>
+
+        <!-- Password Field -->
+        <label for="password">Password *</label>
+        <input type="password" 
+               id="password" 
+               name="password" 
+               placeholder="Enter your password" 
+               minlength="8" 
+               required>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" 
+               id="dob" 
+               name="dob">
+
+        <!-- Dropdown -->
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="ke">Kenya</option>
+            <option value="sa">South Africa </option>
+            <option value="ng">Nigeria</option>
+            <option value="za">Zambia</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <!-- Checkboxes -->
+        <label>Interests</label>
+        <input type="checkbox" id="tech" name="interests" value="tech">
+        <label for="tech">Technology</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- Note Section -->
+    <h2>Note</h2>
+    <p>This is a sample HTML page created with all requested elements.</p>
+</body>
+</html>
